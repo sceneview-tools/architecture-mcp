@@ -1,5 +1,7 @@
 # architecture-mcp
 
+> **Disclaimer:** This tool provides estimates and suggestions for **informational purposes only**. It does not constitute professional architectural, engineering, legal, or financial advice. Not professional architectural advice — consult a licensed architect. All generated content (floor plans, 3D concepts, material palettes, cost estimates, specifications) must be verified independently. See [TERMS.md](./TERMS.md) and [PRIVACY.md](./PRIVACY.md).
+
 **MCP server for architects and interior designers** -- 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specifications.
 
 Built on the [Model Context Protocol](https://modelcontextprotocol.io) (MCP), this server gives AI assistants (Claude, GPT, etc.) professional-grade architecture and interior design tools.

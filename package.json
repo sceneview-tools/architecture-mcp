@@ -1,6 +1,6 @@
 {
   "name": "architecture-mcp",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "MCP server for architects and interior designers — 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specs",
   "type": "module",
   "main": "dist/index.js",
@@ -25,7 +25,7 @@
     "ai",
     "model-context-protocol"
   ],
-  "author": "Thomas Gorisse",
+  "author": "SceneView Tools",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1"

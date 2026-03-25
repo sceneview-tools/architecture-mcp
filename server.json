@@ -1,0 +1,67 @@
+{
+  "name": "architecture-mcp",
+  "display_name": "Architecture & Interior Design MCP",
+  "description": "AI-powered tools for architects and interior designers: 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specifications.",
+  "version": "1.0.0",
+  "author": "Thomas Gorisse",
+  "license": "MIT",
+  "homepage": "https://github.com/thomasgorisse/architecture-mcp",
+  "repository": "https://github.com/thomasgorisse/architecture-mcp",
+  "categories": ["architecture", "design", "3d", "engineering"],
+  "tools": [
+    {
+      "name": "generate_3d_concept",
+      "description": "Generate a 3D architectural concept from text description"
+    },
+    {
+      "name": "create_floor_plan",
+      "description": "Create a detailed floor plan (SVG) from room descriptions with dimensions"
+    },
+    {
+      "name": "interior_design",
+      "description": "Suggest interior design with mood board, color palette, furniture placement"
+    },
+    {
+      "name": "material_palette",
+      "description": "Generate material/texture suggestions for walls, floors, ceilings"
+    },
+    {
+      "name": "lighting_analysis",
+      "description": "Analyze and suggest lighting placement for a room layout"
+    },
+    {
+      "name": "render_walkthrough",
+      "description": "Generate a 3D walkthrough specification with embeddable viewer"
+    },
+    {
+      "name": "cost_estimate",
+      "description": "Rough cost estimate for materials, labor, and furnishing"
+    },
+    {
+      "name": "export_specs",
+      "description": "Generate technical specifications document for contractors"
+    }
+  ],
+  "pricing": {
+    "free": {
+      "designs_per_month": 10,
+      "tools": ["generate_3d_concept", "create_floor_plan", "interior_design", "material_palette", "lighting_analysis", "cost_estimate"]
+    },
+    "pro": {
+      "price_usd": 49,
+      "designs_per_month": 100,
+      "tools": "all"
+    },
+    "studio": {
+      "price_usd": 149,
+      "designs_per_month": "unlimited",
+      "tools": "all",
+      "priority": true
+    }
+  },
+  "transport": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["architecture-mcp"]
+  }
+}

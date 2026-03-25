@@ -1,6 +1,6 @@
 {
   "name": "architecture-mcp",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "MCP server for architects and interior designers — 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specs",
   "type": "module",
   "main": "dist/index.js",
@@ -43,5 +43,6 @@
     "dist",
     "server.json",
     "README.md"
-  ]
+  ],
+  "mcpName": "io.github.ThomasGorisse/architecture-mcp"
 }

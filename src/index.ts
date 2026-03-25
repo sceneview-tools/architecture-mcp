@@ -37,6 +37,16 @@ const server = new McpServer({
   version: "1.0.0",
 });
 
+// ---------------------------------------------------------------------------
+// Legal disclaimer
+// ---------------------------------------------------------------------------
+
+const DISCLAIMER = '\n\n---\n*Not professional architectural advice. Consult a licensed architect. Informational purposes only. See [TERMS.md](https://github.com/thomasgorisse/architecture-mcp/blob/main/TERMS.md).*';
+
+function addDisclaimer(text: string): string {
+  return text + DISCLAIMER;
+}
+
 // Helper: wrap tool execution with tier checks
 function withTierCheck<T>(
   toolName: string,
@@ -96,7 +106,7 @@ server.tool(
   { ...Generate3dConceptSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("generate_3d_concept", generate3dConcept)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 
@@ -106,7 +116,7 @@ server.tool(
   { ...CreateFloorPlanSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("create_floor_plan", createFloorPlan)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 
@@ -116,7 +126,7 @@ server.tool(
   { ...InteriorDesignSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("interior_design", interiorDesign)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 
@@ -126,7 +136,7 @@ server.tool(
   { ...MaterialPaletteSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("material_palette", materialPalette)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 
@@ -136,7 +146,7 @@ server.tool(
   { ...LightingAnalysisSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("lighting_analysis", lightingAnalysis)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 
@@ -146,7 +156,7 @@ server.tool(
   { ...RenderWalkthroughSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("render_walkthrough", renderWalkthrough)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 
@@ -156,7 +166,7 @@ server.tool(
   { ...CostEstimateSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("cost_estimate", costEstimate)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 
@@ -166,7 +176,7 @@ server.tool(
   { ...ExportSpecsSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("export_specs", exportSpecs)(args);
-    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );
 

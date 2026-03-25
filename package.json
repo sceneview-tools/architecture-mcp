@@ -1,0 +1,47 @@
+{
+  "name": "architecture-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for architects and interior designers — 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specs",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "architecture-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "architecture",
+    "interior-design",
+    "3d",
+    "floor-plan",
+    "lighting",
+    "materials",
+    "ai",
+    "model-context-protocol"
+  ],
+  "author": "Thomas Gorisse",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "server.json",
+    "README.md"
+  ]
+}

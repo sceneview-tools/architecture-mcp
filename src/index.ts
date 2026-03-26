@@ -45,7 +45,7 @@ const server = new McpServer({
 // Legal disclaimer
 // ---------------------------------------------------------------------------
 
-const DISCLAIMER = '\n\n---\n*Not professional architectural advice. Consult a licensed architect. Informational purposes only. See [TERMS.md](https://github.com/sceneview/architecture-mcp/blob/main/TERMS.md).*';
+const DISCLAIMER = '\n\n---\n*Not professional architectural advice. Consult a licensed architect. Informational purposes only. See [TERMS.md](https://github.com/sceneview-tools/architecture-mcp/blob/main/TERMS.md).*';
 
 function addDisclaimer(text: string): string {
   return text + DISCLAIMER;

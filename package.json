@@ -36,10 +36,10 @@
     "typescript": "^5.8.3",
     "vitest": "^3.1.2"
   },
-  "homepage": "https://github.com/sceneview/architecture-mcp",
+  "homepage": "https://github.com/sceneview-tools/architecture-mcp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sceneview/architecture-mcp.git"
+    "url": "https://github.com/sceneview-tools/architecture-mcp.git"
   },
   "engines": {
     "node": ">=18"

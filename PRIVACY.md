@@ -40,4 +40,4 @@ We may update this Privacy Policy from time to time. Changes will be reflected i
 
 ### Contact
 
-Thomas Gorisse — [https://github.com/thomasgorisse/architecture-mcp](https://github.com/thomasgorisse/architecture-mcp)
+SceneView Tools — [https://github.com/sceneview/architecture-mcp](https://github.com/sceneview/architecture-mcp)

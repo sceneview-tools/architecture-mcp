@@ -1,5 +1,9 @@
 # architecture-mcp
 
+[![npm version](https://img.shields.io/npm/v/architecture-mcp)](https://www.npmjs.com/package/architecture-mcp)
+[![tests](https://img.shields.io/badge/tests-63%20passed-brightgreen)](#)
+[![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+
 > **Disclaimer:** This tool provides estimates and suggestions for **informational purposes only**. It does not constitute professional architectural, engineering, legal, or financial advice. Not professional architectural advice — consult a licensed architect. All generated content (floor plans, 3D concepts, material palettes, cost estimates, specifications) must be verified independently. See [TERMS.md](./TERMS.md) and [PRIVACY.md](./PRIVACY.md).
 
 **MCP server for architects and interior designers** -- 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specifications.
@@ -110,6 +114,12 @@ npm test
 npm run dev  # Development mode with tsx
 ```
 
+## Legal
+
+- [LICENSE](./LICENSE) -- MIT License
+- [TERMS.md](./TERMS.md) -- Terms of Service
+- [PRIVACY.md](./PRIVACY.md) -- Privacy Policy (no data collected)
+
 ## License
 
-MIT
+MIT -- see [LICENSE](./LICENSE).

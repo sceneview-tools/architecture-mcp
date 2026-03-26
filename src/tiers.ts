@@ -29,6 +29,7 @@ export const TIERS: Record<Tier, TierConfig> = {
       "material_palette",
       "lighting_analysis",
       "cost_estimate",
+      "sustainability_analysis",
     ],
   },
   pro: {
@@ -45,6 +46,8 @@ export const TIERS: Record<Tier, TierConfig> = {
       "render_walkthrough",
       "cost_estimate",
       "export_specs",
+      "generate_3d_walkthrough",
+      "sustainability_analysis",
     ],
   },
   studio: {
@@ -61,6 +64,8 @@ export const TIERS: Record<Tier, TierConfig> = {
       "render_walkthrough",
       "cost_estimate",
       "export_specs",
+      "generate_3d_walkthrough",
+      "sustainability_analysis",
     ],
   },
 };

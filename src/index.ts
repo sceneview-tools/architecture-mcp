@@ -21,6 +21,10 @@ import {
   costEstimate,
   ExportSpecsSchema,
   exportSpecs,
+  Generate3dWalkthroughSchema,
+  generate3dWalkthrough,
+  SustainabilityAnalysisSchema,
+  sustainabilityAnalysis,
 } from "./tools/index.js";
 
 import {
@@ -34,7 +38,7 @@ import {
 
 const server = new McpServer({
   name: "architecture-mcp",
-  version: "1.0.0",
+  version: "2.0.0",
 });
 
 // ---------------------------------------------------------------------------
@@ -176,6 +180,26 @@ server.tool(
   { ...ExportSpecsSchema.shape, ...apiKeyField },
   async (args) => {
     const result = withTierCheck("export_specs", exportSpecs)(args);
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
+  }
+);
+
+server.tool(
+  "generate_3d_walkthrough",
+  "Generate an animated 3D walkthrough camera path through a building. Creates waypoints, camera movements, lighting, audio, and render settings for a full architectural walkthrough video or interactive viewer. Pro/Studio tier required.",
+  { ...Generate3dWalkthroughSchema.shape, ...apiKeyField },
+  async (args) => {
+    const result = withTierCheck("generate_3d_walkthrough", generate3dWalkthrough)(args);
+    return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
+  }
+);
+
+server.tool(
+  "sustainability_analysis",
+  "Analyze building energy efficiency, materials sustainability, water conservation, and carbon footprint. Provides scores, certification gap analysis (LEED/BREEAM/Passive House), lifecycle carbon estimates, and prioritized improvement recommendations.",
+  { ...SustainabilityAnalysisSchema.shape, ...apiKeyField },
+  async (args) => {
+    const result = withTierCheck("sustainability_analysis", sustainabilityAnalysis)(args);
     return { content: [{ type: "text", text: addDisclaimer(JSON.stringify(result, null, 2)) }] };
   }
 );

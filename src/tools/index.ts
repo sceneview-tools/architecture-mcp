@@ -6,3 +6,5 @@ export { LightingAnalysisSchema, lightingAnalysis } from "./lighting-analysis.js
 export { RenderWalkthroughSchema, renderWalkthrough } from "./render-walkthrough.js";
 export { CostEstimateSchema, costEstimate } from "./cost-estimate.js";
 export { ExportSpecsSchema, exportSpecs } from "./export-specs.js";
+export { Generate3dWalkthroughSchema, generate3dWalkthrough } from "./generate-3d-walkthrough.js";
+export { SustainabilityAnalysisSchema, sustainabilityAnalysis } from "./sustainability-analysis.js";

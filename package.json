@@ -1,6 +1,6 @@
 {
   "name": "architecture-mcp",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "MCP server for architects and interior designers — 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specs",
   "type": "module",
   "main": "dist/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "architecture-mcp",
-  "version": "2.0.0",
+  "version": "2.0.4",
   "description": "MCP server for architects and interior designers — 3D concepts, floor plans, material palettes, lighting analysis, cost estimates, and contractor specs",
   "type": "module",
   "main": "dist/index.js",
@@ -28,13 +28,13 @@
   "author": "SceneView Tools",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1"
+    "@modelcontextprotocol/sdk": "^1.29.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
-    "vitest": "^3.1.2"
+    "vitest": "^3.1.4"
   },
   "homepage": "https://github.com/sceneview-tools/architecture-mcp",
   "repository": {
@@ -50,5 +50,15 @@
     "README.md",
     "LICENSE"
   ],
-  "mcpName": "io.github.sceneview/architecture-mcp"
+  "mcpName": "io.github.sceneview/architecture-mcp",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/sceneview"
+    },
+    {
+      "type": "polar",
+      "url": "https://polar.sh/sceneview"
+    }
+  ]
 }
